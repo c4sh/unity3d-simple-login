@@ -30,13 +30,9 @@ public class ResetPassword : MonoBehaviour {
 		
 		
 		if (GUI.Button (UtilResize.ResizeGUI(new Rect (80,140, 220, 50)), "Back")) {
-			
-			if (email != "") {			
+					
 				Application.LoadLevel("LoginScene");				
-			}else {
-				errorMsg = "Passwords fields doesn't match";
-				Debug.Log(errorMsg);
-			}
+			
 		}
 		
 		if (errorMsg != "") {
@@ -51,7 +47,7 @@ public class ResetPassword : MonoBehaviour {
 	void OnResetPassword(bool success) {
 		
 		if (success) {		
-			errorMsg = "Password reset successfully, please check your email for instructions to complet the process";
+			errorMsg = "Password reset successfully, please check your email for instructions to complete the process";
 			Debug.Log(errorMsg);
 		}else {
 			errorMsg = Gamedonia.getLastError().ToString();
