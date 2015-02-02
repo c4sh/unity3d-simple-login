@@ -35,7 +35,7 @@ public class Login : MonoBehaviour {
 
 		GUI.enabled = (statusMsg == "");
 		//Login Controls
-		GUI.Label(UtilResize.ResizeGUI(new Rect(80,10,220,20)),"eMail","LabelBold");
+		GUI.Label(UtilResize.ResizeGUI(new Rect(80,10,220,20)),"EMILIO","LabelBold");
 		email = GUI.TextField (UtilResize.ResizeGUI(new Rect (80, 30, 220, 40)), email, 100);
 		
 		GUI.Label(UtilResize.ResizeGUI(new Rect(80,75,220,20)),"Password", "LabelBold");
